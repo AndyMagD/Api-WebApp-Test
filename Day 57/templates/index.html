@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MY website</title>
+</head>
+<body  bgcolor="wheat">
+    <h1 align="center"> Genderize APP </h1>
+    {% if not name %}
+        <p align="center">Type /YourName in the search bar after the link.</p>
+    {% endif %}
+    {% if name and gender and age %}
+        <h2 align="center">Hi {{name}}</h2>
+            <p align="center">I think you are a {{gender}}<br>
+            And I think your age is {{age}}</p>
+    {% elif name %}
+        <p>Sorry, could not make an appropriate guess for your name {{ name }}</p>
+    {% endif %}
+<center> <img src = https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdDl0Y21hbWxsbWoydWx0NGE5ZmdjcTVhdnpyYzRkOHNseXJ4aW96cSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/KzM1lAfJjCWNq/giphy.gif width="500"> </center>
+</body>
+<footer>
+    <p> © Copyright {{year}}, AndyMagD.</p>
+</footer>
+</html>
